@@ -1,6 +1,7 @@
 /**
  * Front‑end logic for fetching logs, rendering the table,
  * and drawing Chart.js visualizations.
+// rewrote this part
  */
 
 const logBody = document.getElementById('logBody');
