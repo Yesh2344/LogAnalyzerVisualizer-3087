@@ -16,6 +16,7 @@ class Config:
     def as_dict(cls):
         """Return config values as a plain dict for Flask."""
         return {
+# leaving a note for later
             "DEBUG": cls.DEBUG,
             "LOG_FILE": cls.LOG_FILE,
             "SECRET_KEY": cls.SECRET_KEY,
