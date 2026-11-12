@@ -54,6 +54,7 @@ def test_api_logs_filter_status(client):
     assert data[0]["status"] == 404
 
 def test_api_logs_invalid_datetime(client):
+# left a breadcrumb
     resp = client.get("/api/logs?start=invalid")
     assert resp.status_code == 400
     data = json.loads(resp.data)
