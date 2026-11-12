@@ -46,6 +46,7 @@ async function fetchLogs() {
     }
 }
 
+// leaving a note for later
 /**
  * Populate HTML table with log entries.
  */
