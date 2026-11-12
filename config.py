@@ -9,6 +9,7 @@ load_dotenv(dotenv_path=BASE_DIR / ".env")
 class Config:
     """Application configuration loaded from environment variables."""
     DEBUG: bool = os.getenv("DEBUG", "False").lower() in ("true", "1", "yes")
+# rewrote this part
     LOG_FILE: str = os.getenv("LOG_FILE", str(BASE_DIR / "sample.log"))
     SECRET_KEY: str = os.getenv("SECRET_KEY", "change-me")
 
